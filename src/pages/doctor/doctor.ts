@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import {DoctorPage} from '../doctor/doctor'
 
 /**
- * Generated class for the CollegePage page.
+ * Generated class for the DoctorPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -11,18 +10,16 @@ import {DoctorPage} from '../doctor/doctor'
 
 @IonicPage()
 @Component({
-  selector: 'page-college',
-  templateUrl: 'college.html',
+  selector: 'page-doctor',
+  templateUrl: 'doctor.html',
 })
-export class CollegePage {
+export class DoctorPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad CollegePage');
+    console.log('ionViewDidLoad DoctorPage');
   }
-  gotoDoctor(){
-    this.navCtrl.push(DoctorPage)
-}
+
 }
