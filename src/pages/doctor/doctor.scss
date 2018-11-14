@@ -1,3 +1,33 @@
 page-doctor {
+    .card-title{
+        height: 59px;
+        font-size: 30px;
+        line-height: 1.3;
+        text-align: center;
+        font-weight: bold;
+        color: color($colors,secondary);
 
+    }
+
+    .rating-numbers{
+        height: 59px;
+        line-height: 1.3;
+        text-align: center;
+        color: color($colors,primary);
+        margin-bottom: -35px;
+
+    }
+    
+    .fab{
+        width: 64.7px;
+        height: 64.7px;
+        background-color: #f8b195;
+    }
+    
+    .stars{
+        background-color: #fff;
+        flex-direction: column;
+        color: color($colors,primary)
+
+    }
 }

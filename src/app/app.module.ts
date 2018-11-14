@@ -8,6 +8,8 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { CollegePage } from '../pages/college/college';
 import { DoctorPage } from '../pages/doctor/doctor';
+import { DocterRatePage } from '../pages/docter-rate/docter-rate';
+import { AddRatePage } from '../pages/add-rate/add-rate';
 
 
 @NgModule({
@@ -15,7 +17,9 @@ import { DoctorPage } from '../pages/doctor/doctor';
     MyApp,
     HomePage,
     CollegePage,
-    DoctorPage
+    DoctorPage,
+    DocterRatePage,
+    AddRatePage
   ],
   imports: [
     BrowserModule,
@@ -26,7 +30,9 @@ import { DoctorPage } from '../pages/doctor/doctor';
     MyApp,
     HomePage,
     CollegePage,
-    DoctorPage
+    DoctorPage,
+    DocterRatePage,
+    AddRatePage
   ],
   providers: [
     StatusBar,
