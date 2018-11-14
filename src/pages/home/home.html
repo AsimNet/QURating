@@ -1,8 +1,7 @@
 <ion-header>
   <ion-navbar>
     <ion-title text-center>
-      <h1>تقييم</h1>
-      منصة تقييم أعضاء هيئة التدريس بجامعة القصيم
+      <h1 class="title">تقييم</h1>
     </ion-title>
   </ion-navbar>
 </ion-header>
@@ -10,7 +9,7 @@
 <ion-content padding>
   <ion-list>
     <ion-item>
-      <ion-card>
+      <ion-card (click)="gotoCollege()">
         <img src="assets/imgs/temp/science.png" >
         <div class="card-title"> الكليات العلمية</div>
       </ion-card>
