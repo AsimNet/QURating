@@ -14,5 +14,89 @@
 
 
 <ion-content padding>
+   <ion-input class="doctorInput" placeholder="اسم الدكتور" type="text" value="" text-right></ion-input>
+   <ion-item class="selectItem">
+      <ion-label></ion-label>
+      <ion-select placeholder="الجنس" text-right>
+        <ion-option value="male">ذكر</ion-option>
+        <ion-option value="female">أنثى</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-input class="doctorInput" placeholder="CS182 :رمز المقرر, مثال" type="text" value="" text-right></ion-input>
+    <ion-card>
+      <ion-item>
+          <ion-label class="rateTitle">التعامل</ion-label>
+      </ion-item>
 
+      <ion-item>
+          <ion-range [(ngModel)]="dealing" max="5" pin="true"  >
+            <ion-icon range-left small name="ios-thumbs-down"></ion-icon>
+            <ion-icon range-right name="ios-thumbs-up"></ion-icon>
+          </ion-range>
+      </ion-item>
+
+      <ion-item>
+          <ion-input class="text" [(ngModel)]="dealingText"text-right type="text" placeholder="مارأيك بالتعامل ؟"></ion-input>
+        </ion-item>
+
+    </ion-card>
+
+    <ion-card>
+        <ion-item>
+            <ion-label class="rateTitle" >الشرح</ion-label>
+        </ion-item>
+
+        <ion-item>
+            <ion-range [(ngModel)]="behavior" max="5" pin="true"  >
+              <ion-icon range-left small name="ios-thumbs-down"></ion-icon>
+              <ion-icon range-right name="ios-thumbs-up"></ion-icon>
+            </ion-range>
+        </ion-item>
+
+        <ion-item>
+            <ion-input class="text" [(ngModel)]="behaviorText"text-right type="text" placeholder="رايك بالشرح ؟"></ion-input>
+        </ion-item>
+
+      </ion-card>
+
+      <ion-card>
+          <ion-item>
+              <ion-label class="rateTitle" >اختبارات</ion-label>
+          </ion-item>
+  
+          <ion-item>
+              <ion-range [(ngModel)]="exams" max="5" pin="true"  >
+                <ion-icon range-left small name="ios-thumbs-down"></ion-icon>
+                <ion-icon range-right name="ios-thumbs-up"></ion-icon>
+              </ion-range>
+          </ion-item>
+  
+          <ion-item>
+              <ion-input class="text" [(ngModel)]="examsText"text-right type="text" placeholder="رايك بالاختبارات ؟"></ion-input>
+            </ion-item>
+  
+        </ion-card>
+  
+        <ion-card>
+            <ion-item>
+                <ion-label class="rateTitle">مرونة التحضير</ion-label>
+            </ion-item>
+    
+            <ion-item>
+                <ion-range [(ngModel)]="attendance" max="5" pin="true"  >
+                  <ion-icon range-left small name="ios-thumbs-down"></ion-icon>
+                  <ion-icon range-right name="ios-thumbs-up"></ion-icon>
+                </ion-range>
+            </ion-item>
+    
+            <ion-item>
+                <ion-input class="text" [(ngModel)]="attendanceText"text-right type="text" placeholder="رايك بالتخضير ؟"></ion-input>
+            </ion-item>
+    
+          </ion-card>
+  <div text-center>
+    <button ion-button round (click)="saveRate()">
+        إضافة التقييم
+    </button>
+  </div>
 </ion-content>

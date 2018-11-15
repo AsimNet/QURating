@@ -21,5 +21,10 @@ export class AddRatePage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad AddRatePage');
   }
+  saveRate(){
+    this.navCtrl.pop();
+    console.log('data saved');
+    
 
+  }
 }

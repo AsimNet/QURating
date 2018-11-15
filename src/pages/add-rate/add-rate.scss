@@ -1,4 +1,8 @@
 page-add-rate {
+    .item{
+        background-color: #fff;
+    }
+
    .toolbar-title {
         font-family: "SST Arabic";
         font-weight: bold;
@@ -6,6 +10,64 @@ page-add-rate {
         text-align: right;
         height: 55px;
 
+
+    }
+    .doctorInput{
+        border-radius: 4px;
+        border: solid 2px #355c7d;
+        margin: 30px 5px; 
+    }
+    .select{
+        border-radius: 4px;
+        border: solid 2px #355c7d;
+        background-color: color($colors ,primary);
+        width: 40%;
+        color: #fff;
+        margin: 30px 5px; 
+
+        .select-placeholder{
+            color: #fff !important
+        }
+        .select-icon-inner{
+            color: #fff !important
+
+        }
+        
+    }
+    .text{
+        width: 283.7px;
+        height: 48.4px;
+        border-radius: 4px;
+        border: solid 2px color($colors ,primary);
+    }
+    .rateTitle{
+        height: 33px;
+        line-height: 1.06;
+        text-align: right;
+        color: #355c7d;
+    }
+    .button{
+        width: 175px;
+        height: 45px;
+        font-size: 20px;
+        line-height: 1.06;
+    }
+
+    .selectItem{
+        background: transparent;
+    }
+
+    .range-knob {
+        background-color: #f8b195 !important
+    }
+    .range-bar-active {
+        background-color: #f8b195 !important
+    }
+    .range-pin::before {
+        background-color: #f8b195 !important
+    }
+    .range-pin{
+        background-color: #f8b195 !important
 
     }
 }
