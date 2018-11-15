@@ -56,7 +56,9 @@ page-add-rate {
     .selectItem{
         background: transparent;
     }
-
+    .item-inner {
+        padding: 12px;
+    }
     .range-knob {
         background-color: #f8b195 !important
     }
@@ -70,4 +72,5 @@ page-add-rate {
         background-color: #f8b195 !important
 
     }
+    
 }

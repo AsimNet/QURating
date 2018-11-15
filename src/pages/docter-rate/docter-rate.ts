@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {AddRatePage} from '../add-rate/add-rate';
 
 /**
  * Generated class for the DocterRatePage page.
@@ -21,5 +22,7 @@ export class DocterRatePage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad DocterRatePage');
   }
-
+  gotoAddRate(){
+    this.navCtrl.push(AddRatePage)
+    }
 }

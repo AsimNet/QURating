@@ -5,7 +5,56 @@ page-docter-rate {
         font-size: 28px;
         text-align: right;
         height: 55px;
+    }
+    .range-knob {
+        background-color: #f8b195 !important
+    }
+    .range-bar-active {
+        background-color: #f8b195 !important
+    }
+    .range-pin::before {
+        background-color: #f8b195 !important
+    }
+    .range-pin{
+        background-color: #f8b195 !important
 
+    }
+    .item{
+        background-color: #fff;
+    }
+    .rateTitle{
+        height: 33px;
+        line-height: 1.06;
+        text-align: right;
+        color: #355c7d;
+    }
+    .fab{
+        width: 64.7px;
+        height: 64.7px;
+        background-color: transparentize($color: #f8b195, $amount: 0.2);
 
+    }
+    .id{
+        width: 58px;
+        height: 24px;
+        color: #b38598;
+        line-height: 1.5;
+
+    }
+    .date{
+        height: 13px;
+        font-size: 8px;
+        color: #355c7d;
+    }
+    .rateText{
+        padding-right: 40px; 
+    }
+    .thumbs{
+        padding: 10px 10px;
+    }
+    .thumbsNumber{
+        padding-left:5px; 
+        line-height: 2;
+        color: #f4717f;
     }
 }

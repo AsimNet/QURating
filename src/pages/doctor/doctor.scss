@@ -21,7 +21,7 @@ page-doctor {
     .fab{
         width: 64.7px;
         height: 64.7px;
-        background-color: #f8b195;
+        background-color: transparentize($color: #f8b195, $amount: 0.2);
     }
     
     .stars{

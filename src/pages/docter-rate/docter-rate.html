@@ -14,5 +14,93 @@
 
 
 <ion-content padding>
+    <ion-card>
+        <ion-item>
+            <ion-label class="rateTitle">التعامل</ion-label>
+        </ion-item>
+  
+        <ion-item>
+            <ion-range [(ngModel)]="dealing" max="5" pin="true"  >
+              <ion-icon range-left small name="ios-thumbs-down"></ion-icon>
+              <ion-icon range-right name="ios-thumbs-up"></ion-icon>
+            </ion-range>
+        </ion-item>
+  
+      
+          <ion-item>
+              <ion-label class="rateTitle" >الشرح</ion-label>
+          </ion-item>
+  
+          <ion-item>
+              <ion-range [(ngModel)]="behavior" max="5" pin="true"  >
+                <ion-icon range-left small name="ios-thumbs-down"></ion-icon>
+                <ion-icon range-right name="ios-thumbs-up"></ion-icon>
+              </ion-range>
+          </ion-item>
+  
 
+  
+        
+  
+        
+            <ion-item>
+                <ion-label class="rateTitle" >اختبارات</ion-label>
+            </ion-item>
+    
+            <ion-item>
+                <ion-range [(ngModel)]="exams" max="5" pin="true"  >
+                  <ion-icon range-left small name="ios-thumbs-down"></ion-icon>
+                  <ion-icon range-right name="ios-thumbs-up"></ion-icon>
+                </ion-range>
+            </ion-item>
+
+    
+          
+    
+              <ion-item>
+                  <ion-label class="rateTitle">مرونة التحضير</ion-label>
+              </ion-item>
+      
+              <ion-item>
+                  <ion-range [(ngModel)]="attendance" max="5" pin="true"  >
+                    <ion-icon range-left small name="ios-thumbs-down"></ion-icon>
+                    <ion-icon range-right name="ios-thumbs-up"></ion-icon>
+                  </ion-range>
+              </ion-item>
+      
+
+      
+            </ion-card>
+            <ion-fab right bottom>
+                <button ion-fab (click)="gotoAddRate()">
+                  <ion-icon name="add"></ion-icon>
+                </button>
+            </ion-fab>
+            <ion-card>
+                <ion-row no-padding>
+                    <ion-col>
+                        <button ion-button clear small color="danger" icon-start>
+                          <ion-icon name='alert'></ion-icon>
+                          إبلاغ
+                         </button>
+                    </ion-col>
+                    <ion-label class="id" text-center >
+                        CS341 مقرر
+                     </ion-label>
+                    <ion-label class="date" text-right >
+                        ٢٥ نوفمبر ٢٠١٨
+                      </ion-label>
+                 </ion-row>
+                <ion-label class="rateText" text-right color="primary">:التعامل</ion-label>
+                <ion-label class="rateText" text-right color="dark-blue"> تعامل رائع ومحترم</ion-label>
+                <ion-label class="rateText" text-right color="primary">:مرونة التحضير</ion-label>
+                <ion-label class="rateText" text-right color="dark-blue">يسمح لك بالغياب فوق الحد المسموح</ion-label>
+
+                <ion-row>
+                    <p class="thumbsNumber">4</p>
+                    <ion-icon class="thumbs" color="dark-blue" name="ios-thumbs-down"></ion-icon>
+                    <p class="thumbsNumber">25</p>
+                    <ion-icon class="thumbs" color="dark-blue" name="ios-thumbs-up"></ion-icon>
+                </ion-row>
+            </ion-card>
 </ion-content>
