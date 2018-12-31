@@ -1,6 +1,5 @@
 // http://ionicframework.com/docs/theming/
 
-
 // App Global Sass
 // --------------------------------------------------
 // Put style rules here that you want to apply globally. These
@@ -14,12 +13,18 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+@font-face {
+    font-family: 'SSTarabic';
+    src: url('../assets/fonts/SST.ttf') format('truetype');
+    }
+
 .toolbar-background{
         background-image: linear-gradient(to right, color($colors,primary)  , color($colors,secondary));
 
 }
 .toolbar-title{
-    font-family: "Baloo Bhaijaan";
+    font-family: "SSTarabic";
     font-size: 30px;
     font-weight: normal;
     text-align: center;
@@ -38,3 +43,6 @@
     margin: 30px 5px; 
 
 }
+* {
+    font-family: 'SSTarabic';
+  }
